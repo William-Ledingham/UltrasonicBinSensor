@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Bin_Sensor)(type Legacy)(uri ${KIPRJMOD}/Bin_Sensor.lib)(options "")(descr ""))
+)

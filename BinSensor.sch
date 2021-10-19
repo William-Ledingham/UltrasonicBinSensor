@@ -1,0 +1,451 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Bin_Sensor:TS8000 U?
+U 1 1 616DD7C5
+P 9150 2250
+F 0 "U?" H 9100 2350 50  0000 L CNN
+F 1 "TS8000" H 9000 2250 50  0000 L CNN
+F 2 "" H 9150 2250 50  0001 C CNN
+F 3 "" H 9150 2250 50  0001 C CNN
+	1    9150 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616DE973
+P 9250 2950
+F 0 "#PWR?" H 9250 2700 50  0001 C CNN
+F 1 "GND" H 9255 2777 50  0000 C CNN
+F 2 "" H 9250 2950 50  0001 C CNN
+F 3 "" H 9250 2950 50  0001 C CNN
+	1    9250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2800 9250 2900
+$Comp
+L Device:C C?
+U 1 1 616E012A
+P 9950 1300
+F 0 "C?" H 10065 1346 50  0000 L CNN
+F 1 "1uF" H 10065 1255 50  0000 L CNN
+F 2 "" H 9988 1150 50  0001 C CNN
+F 3 "~" H 9950 1300 50  0001 C CNN
+	1    9950 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1000 9400 1100
+Wire Wire Line
+	9400 1100 9950 1100
+Connection ~ 9400 1100
+Wire Wire Line
+	9400 1100 9400 1600
+$Comp
+L power:GND #PWR?
+U 1 1 616E1713
+P 9950 1450
+F 0 "#PWR?" H 9950 1200 50  0001 C CNN
+F 1 "GND" H 9955 1277 50  0000 C CNN
+F 2 "" H 9950 1450 50  0001 C CNN
+F 3 "" H 9950 1450 50  0001 C CNN
+	1    9950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 616E25DF
+P 8350 1300
+F 0 "C?" H 8465 1346 50  0000 L CNN
+F 1 "1uF" H 8465 1255 50  0000 L CNN
+F 2 "" H 8388 1150 50  0001 C CNN
+F 3 "~" H 8350 1300 50  0001 C CNN
+	1    8350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9950 1100 9950 1150
+Wire Wire Line
+	8350 1150 8350 1050
+Wire Wire Line
+	8350 1050 8950 1050
+Wire Wire Line
+	8950 1050 8950 1500
+Wire Wire Line
+	8950 1500 9100 1500
+Wire Wire Line
+	9100 1500 9100 1600
+Connection ~ 8950 1500
+Wire Wire Line
+	8950 1500 8950 1600
+$Comp
+L power:GND #PWR?
+U 1 1 616E43F4
+P 8350 1450
+F 0 "#PWR?" H 8350 1200 50  0001 C CNN
+F 1 "GND" H 8355 1277 50  0000 C CNN
+F 2 "" H 8350 1450 50  0001 C CNN
+F 3 "" H 8350 1450 50  0001 C CNN
+	1    8350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 616E4724
+P 8950 3300
+F 0 "C?" H 9065 3346 50  0000 L CNN
+F 1 "1uF" H 9065 3255 50  0000 L CNN
+F 2 "" H 8988 3150 50  0001 C CNN
+F 3 "~" H 8950 3300 50  0001 C CNN
+	1    8950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 2800 9100 2900
+Wire Wire Line
+	9100 2900 9250 2900
+Wire Wire Line
+	9250 2900 9250 2950
+Connection ~ 9250 2900
+Wire Wire Line
+	8950 2800 8950 3150
+$Comp
+L power:GND #PWR?
+U 1 1 616E65B7
+P 8950 3450
+F 0 "#PWR?" H 8950 3200 50  0001 C CNN
+F 1 "GND" H 8955 3277 50  0000 C CNN
+F 2 "" H 8950 3450 50  0001 C CNN
+F 3 "" H 8950 3450 50  0001 C CNN
+	1    8950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616E70FC
+P 8100 2750
+F 0 "R?" H 8170 2796 50  0000 L CNN
+F 1 "10k" H 8170 2705 50  0000 L CNN
+F 2 "" V 8030 2750 50  0001 C CNN
+F 3 "~" H 8100 2750 50  0001 C CNN
+	1    8100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616E795A
+P 8100 2900
+F 0 "#PWR?" H 8100 2650 50  0001 C CNN
+F 1 "GND" H 8105 2727 50  0000 C CNN
+F 2 "" H 8100 2900 50  0001 C CNN
+F 3 "" H 8100 2900 50  0001 C CNN
+	1    8100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2300 8100 2300
+Wire Wire Line
+	8100 2300 8100 2600
+$Comp
+L Device:C C?
+U 1 1 616E880D
+P 7850 2050
+F 0 "C?" V 7598 2050 50  0000 C CNN
+F 1 "10nF" V 7689 2050 50  0000 C CNN
+F 2 "" H 7888 1900 50  0001 C CNN
+F 3 "~" H 7850 2050 50  0001 C CNN
+	1    7850 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 2050 8500 2050
+Wire Wire Line
+	7350 2050 7700 2050
+Text GLabel 10450 2300 2    50   BiDi ~ 0
+DATA
+Text GLabel 10450 2050 2    50   Input ~ 0
+CLK
+Wire Wire Line
+	10450 2050 9800 2050
+Wire Wire Line
+	10450 2300 9800 2300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 616F513A
+P 9400 1000
+F 0 "#PWR?" H 9400 850 50  0001 C CNN
+F 1 "+3V3" H 9415 1173 50  0000 C CNN
+F 2 "" H 9400 1000 50  0001 C CNN
+F 3 "" H 9400 1000 50  0001 C CNN
+	1    9400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 616F71DE
+P 3250 1300
+F 0 "Q?" H 3455 1346 50  0000 L CNN
+F 1 "2N7002" H 3455 1255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 1225 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3250 1300 50  0001 L CNN
+	1    3250 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 617013E3
+P 2100 1300
+F 0 "Q?" H 2304 1346 50  0000 L CNN
+F 1 "2N7002" H 2304 1255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 1225 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 2100 1300 50  0001 L CNN
+	1    2100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61706348
+P 2100 2450
+F 0 "Q?" H 2304 2496 50  0000 L CNN
+F 1 "2N7002" H 2304 2405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 2375 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 2100 2450 50  0001 L CNN
+	1    2100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61707266
+P 3250 2950
+F 0 "Q?" H 3455 2996 50  0000 L CNN
+F 1 "2N7002" H 3455 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 2875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3250 2950 50  0001 L CNN
+	1    3250 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1100 2200 1000
+Wire Wire Line
+	2200 1000 2650 1000
+Wire Wire Line
+	3150 1000 3150 1100
+Wire Wire Line
+	3150 3150 3150 3250
+Wire Wire Line
+	3150 3250 2650 3250
+Wire Wire Line
+	2200 3250 2200 3150
+$Comp
+L power:VDD #PWR?
+U 1 1 61717BDF
+P 2650 950
+F 0 "#PWR?" H 2650 800 50  0001 C CNN
+F 1 "VDD" H 2665 1123 50  0000 C CNN
+F 2 "" H 2650 950 50  0001 C CNN
+F 3 "" H 2650 950 50  0001 C CNN
+	1    2650 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 950  2650 1000
+Connection ~ 2650 1000
+Wire Wire Line
+	2650 1000 3150 1000
+$Comp
+L power:GND #PWR?
+U 1 1 6171C005
+P 2650 3250
+F 0 "#PWR?" H 2650 3000 50  0001 C CNN
+F 1 "GND" H 2655 3077 50  0000 C CNN
+F 2 "" H 2650 3250 50  0001 C CNN
+F 3 "" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 3250
+Wire Wire Line
+	2650 3250 2200 3250
+Text GLabel 850  1300 0    50   Input ~ 0
+SIGNAL
+Wire Wire Line
+	3450 3500 3450 2950
+$Comp
+L 74xx:74LS04 U?
+U 1 1 61735C98
+P 1400 950
+F 0 "U?" H 1400 1267 50  0000 C CNN
+F 1 "74LS04" H 1400 1176 50  0000 C CNN
+F 2 "" H 1400 950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 1400 950 50  0001 C CNN
+	1    1400 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1300 950  1300
+Wire Wire Line
+	950  1300 950  950 
+Wire Wire Line
+	950  950  1100 950 
+Connection ~ 950  1300
+Wire Wire Line
+	950  1300 1500 1300
+Wire Wire Line
+	1700 950  1700 650 
+Wire Wire Line
+	1700 650  3450 650 
+Wire Wire Line
+	3450 650  3450 1300
+Connection ~ 1700 950 
+Wire Wire Line
+	1500 3500 3450 3500
+Connection ~ 1500 1300
+Wire Wire Line
+	1500 1300 1900 1300
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 6179E1AB
+P 2100 2950
+F 0 "Q?" H 2304 2996 50  0000 L CNN
+F 1 "2N7002" H 2304 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 2875 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 2100 2950 50  0001 L CNN
+	1    2100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 617A0E5C
+P 3250 1800
+F 0 "Q?" H 3455 1846 50  0000 L CNN
+F 1 "2N7002" H 3455 1755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3450 1725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3250 1800 50  0001 L CNN
+	1    3250 1800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1500 2200 2100
+Wire Wire Line
+	2200 2650 2200 2750
+Wire Wire Line
+	3150 2000 3150 2200
+Wire Wire Line
+	3150 1500 3150 1600
+Text GLabel 850  2950 0    50   Input ~ 0
+SEND
+Wire Wire Line
+	850  2950 1400 2950
+Wire Wire Line
+	1500 1300 1500 3500
+Wire Wire Line
+	1700 2450 1900 2450
+Wire Wire Line
+	1700 950  1700 2450
+Wire Wire Line
+	1400 2950 1400 3600
+Wire Wire Line
+	1400 3600 3550 3600
+Wire Wire Line
+	3550 3600 3550 2650
+Wire Wire Line
+	3550 1800 3450 1800
+Connection ~ 1400 2950
+Wire Wire Line
+	1400 2950 1900 2950
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 617D4F67
+P 4550 2650
+F 0 "Q?" H 4754 2696 50  0000 L CNN
+F 1 "2N7002" H 4754 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4750 2575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4550 2650 50  0001 L CNN
+	1    4550 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2200 2100
+Wire Wire Line
+	2200 2100 2200 2250
+Connection ~ 3150 2200
+Wire Wire Line
+	3150 2200 3150 2750
+Wire Wire Line
+	3750 2650 3550 2650
+Connection ~ 3550 2650
+Wire Wire Line
+	3550 2650 3550 1800
+$Comp
+L 74xx:74LS04 U?
+U 1 1 617EA5B8
+P 4050 2650
+F 0 "U?" H 4050 2967 50  0000 C CNN
+F 1 "74LS04" H 4050 2876 50  0000 C CNN
+F 2 "" H 4050 2650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4050 2650 50  0001 C CNN
+	1    4050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker_Ultrasound LS?
+U 1 1 617EBD6A
+P 5150 2100
+F 0 "LS?" H 5324 2096 50  0000 L CNN
+F 1 "Speaker_Ultrasound" H 5324 2005 50  0000 L CNN
+F 2 "" H 5115 2050 50  0001 C CNN
+F 3 "~" H 5115 2050 50  0001 C CNN
+	1    5150 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2200 4650 2450
+Wire Wire Line
+	3150 2200 4650 2200
+Wire Wire Line
+	4650 2200 4950 2200
+Connection ~ 4650 2200
+Wire Wire Line
+	2200 2100 4650 2100
+$Comp
+L power:GND #PWR?
+U 1 1 617F3D40
+P 4650 2950
+F 0 "#PWR?" H 4650 2700 50  0001 C CNN
+F 1 "GND" H 4655 2777 50  0000 C CNN
+F 2 "" H 4650 2950 50  0001 C CNN
+F 3 "" H 4650 2950 50  0001 C CNN
+	1    4650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2850 4650 2950
+Wire Wire Line
+	7350 2050 7350 1800
+Wire Wire Line
+	7350 1800 4650 1800
+Wire Wire Line
+	4650 1800 4650 2100
+Connection ~ 4650 2100
+Wire Wire Line
+	4650 2100 4950 2100
+Text GLabel 10450 2900 2    50   Output ~ 0
+AOUT
+Wire Wire Line
+	9400 2800 9400 2900
+Wire Wire Line
+	9400 2900 10450 2900
+$EndSCHEMATC
