@@ -466,37 +466,30 @@ F 3 "~" H 4500 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 2000 4500 2050
-Wire Wire Line
-	4500 2350 4500 2400
-Wire Wire Line
-	4500 2400 4500 2950
-Connection ~ 4500 2400
 $Comp
 L power:GND #PWR?
 U 1 1 617E9294
-P 4500 3600
-F 0 "#PWR?" H 4500 3350 50  0001 C CNN
-F 1 "GND" H 4505 3427 50  0000 C CNN
-F 2 "" H 4500 3600 50  0001 C CNN
-F 3 "" H 4500 3600 50  0001 C CNN
-	1    4500 3600
+P 5800 4550
+F 0 "#PWR?" H 5800 4300 50  0001 C CNN
+F 1 "GND" H 5805 4377 50  0000 C CNN
+F 2 "" H 5800 4550 50  0001 C CNN
+F 3 "" H 5800 4550 50  0001 C CNN
+	1    5800 4550
 	1    0    0    -1  
 $EndComp
+Text GLabel 5400 4250 0    50   Input ~ 0
+RxTx
 Wire Wire Line
-	4500 3350 4500 3600
-Text GLabel 4100 3150 0    50   Input ~ 0
-SEND
-Wire Wire Line
-	4200 3150 4100 3150
+	5500 4250 5400 4250
 $Comp
 L Transistor_FET:2N7002 Q?
 U 1 1 6182813E
-P 4400 3150
-F 0 "Q?" H 4605 3196 50  0000 L CNN
-F 1 "2N7002" H 4605 3105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 3075 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 3150 50  0001 L CNN
-	1    4400 3150
+P 5700 4250
+F 0 "Q?" H 5905 4296 50  0000 L CNN
+F 1 "2N7002" H 5905 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5900 4175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 5700 4250 50  0001 L CNN
+	1    5700 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -607,26 +600,6 @@ F 3 "" H 2650 3150 50  0001 C CNN
 	1    2650 3150
 	1    0    0    -1  
 $EndComp
-Text GLabel 1100 2900 0    50   Input ~ 0
-SEND
-$Comp
-L 4xxx:4011 U?
-U 1 1 6199AE61
-P 1950 2800
-F 0 "U?" H 1950 3125 50  0000 C CNN
-F 1 "4011" H 1950 3034 50  0000 C CNN
-F 2 "" H 1950 2800 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 1950 2800 50  0001 C CNN
-	1    1950 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 2050 1500 2700
-Wire Wire Line
-	1500 2700 1650 2700
-Connection ~ 1500 2050
-Wire Wire Line
-	1100 2900 1650 2900
 $Comp
 L Diode:BAV99 D?
 U 1 1 618B2E4A
@@ -638,19 +611,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7200 2600
 	1    7200 2600
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 617D8C54
-P 5900 4050
-F 0 "#PWR?" H 5900 3800 50  0001 C CNN
-F 1 "GND" H 5905 3877 50  0000 C CNN
-F 2 "" H 5900 4050 50  0001 C CNN
-F 3 "" H 5900 4050 50  0001 C CNN
-	1    5900 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 4050 5900 3850
 Wire Wire Line
 	7500 2600 7500 2950
 Wire Wire Line
@@ -689,22 +649,12 @@ Wire Wire Line
 Connection ~ 7200 2050
 Wire Wire Line
 	7200 2050 7700 2050
-Wire Wire Line
-	5400 2450 5400 2050
-Wire Wire Line
-	5400 2050 6700 2050
-Wire Wire Line
-	5400 2050 5400 2000
-Wire Wire Line
-	5400 2000 4500 2000
-Connection ~ 5400 2050
-Connection ~ 4500 2000
 $Comp
 L Bin_Sensor:BD62105AFVM U?
 U 1 1 619E0BA6
 P 3100 4900
-F 0 "U?" H 3125 5365 50  0000 C CNN
-F 1 "BD62105AFVM" H 3125 5274 50  0000 C CNN
+F 0 "U?" H 3100 5000 50  0000 C CNN
+F 1 "BD62105AFVM" H 3100 4900 50  0000 C CNN
 F 2 "" H 3100 4900 50  0001 C CNN
 F 3 "" H 3100 4900 50  0001 C CNN
 	1    3100 4900
@@ -760,16 +710,152 @@ Wire Wire Line
 Wire Wire Line
 	3950 4550 3950 4600
 Connection ~ 3750 4700
+Connection ~ 1500 2050
 Wire Wire Line
-	3750 5000 5300 5000
+	1150 2850 1700 2850
+Text GLabel 1150 2850 0    50   Input ~ 0
+RxTx
+Text GLabel 1100 4450 0    50   Input ~ 0
+SIGNAL
 Wire Wire Line
-	5300 5000 5300 3550
+	1100 4450 1250 4450
 Wire Wire Line
-	5300 3550 5850 3550
+	1250 4450 2150 4450
 Wire Wire Line
-	5850 3650 5400 3650
+	2150 4450 2150 4850
 Wire Wire Line
-	5400 3650 5400 5150
+	2150 4850 2500 4850
+Connection ~ 1250 4450
+Text GLabel 1100 5050 0    50   Input ~ 0
+RxTx
 Wire Wire Line
-	5400 5150 3750 5150
+	1100 5050 1400 5050
+Wire Wire Line
+	1950 5000 2500 5000
+Wire Wire Line
+	5800 4450 5800 4550
+Wire Wire Line
+	5800 4050 5800 3900
+Wire Wire Line
+	5800 3550 5800 2050
+Wire Wire Line
+	5800 2050 6700 2050
+Connection ~ 5800 3550
+Wire Wire Line
+	5800 3550 5850 3550
+Wire Wire Line
+	4250 3650 4250 5150
+Wire Wire Line
+	4250 5150 3750 5150
+Wire Wire Line
+	4150 3550 4150 5000
+Wire Wire Line
+	4150 5000 3750 5000
+Wire Wire Line
+	4150 3550 5800 3550
+Wire Wire Line
+	4500 2000 5800 2000
+Wire Wire Line
+	5800 2000 5800 2050
+Connection ~ 4500 2000
+Connection ~ 5800 2050
+Wire Wire Line
+	4500 2350 4500 2400
+Connection ~ 4500 2400
+Connection ~ 5800 3650
+Wire Wire Line
+	5800 3650 5850 3650
+Wire Wire Line
+	4250 3650 5800 3650
+$Comp
+L power:GND #PWR?
+U 1 1 61B18D45
+P 4500 3100
+F 0 "#PWR?" H 4500 2850 50  0001 C CNN
+F 1 "GND" H 4505 2927 50  0000 C CNN
+F 2 "" H 4500 3100 50  0001 C CNN
+F 3 "" H 4500 3100 50  0001 C CNN
+	1    4500 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 2800 0    50   Input ~ 0
+RxTx
+Wire Wire Line
+	4200 2800 4100 2800
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61B18D4D
+P 4400 2800
+F 0 "Q?" H 4605 2846 50  0000 L CNN
+F 1 "2N7002" H 4605 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 2725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4400 2800 50  0001 L CNN
+	1    4400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3000 4500 3100
+Wire Wire Line
+	4500 2400 4500 2600
+$Comp
+L Device:R R?
+U 1 1 61B32646
+P 6450 4250
+F 0 "R?" H 6520 4296 50  0000 L CNN
+F 1 "0" H 6520 4205 50  0000 L CNN
+F 2 "" V 6380 4250 50  0001 C CNN
+F 3 "~" H 6450 4250 50  0001 C CNN
+	1    6450 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3900 6450 3900
+Wire Wire Line
+	6450 3900 6450 4100
+Connection ~ 5800 3900
+Wire Wire Line
+	5800 3900 5800 3650
+$Comp
+L power:GND #PWR?
+U 1 1 61B389B6
+P 6450 4550
+F 0 "#PWR?" H 6450 4300 50  0001 C CNN
+F 1 "GND" H 6455 4377 50  0000 C CNN
+F 2 "" H 6450 4550 50  0001 C CNN
+F 3 "" H 6450 4550 50  0001 C CNN
+	1    6450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4550 6450 4400
+Wire Wire Line
+	1700 2750 1500 2750
+Wire Wire Line
+	1500 2050 1500 2750
+Wire Wire Line
+	1400 4950 1250 4950
+Wire Wire Line
+	1250 4450 1250 4950
+$Comp
+L 74xGxx:74LVC1G02 U?
+U 1 1 61B97BFE
+P 2000 2800
+F 0 "U?" H 1975 3067 50  0000 C CNN
+F 1 "74LVC1G02" H 1975 2976 50  0000 C CNN
+F 2 "" H 2000 2800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2000 2800 50  0001 C CNN
+	1    2000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xGxx:74LVC1G02 U?
+U 1 1 61B9F815
+P 1700 5000
+F 0 "U?" H 1675 5267 50  0000 C CNN
+F 1 "74LVC1G02" H 1675 5176 50  0000 C CNN
+F 2 "" H 1700 5000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1700 5000 50  0001 C CNN
+	1    1700 5000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
